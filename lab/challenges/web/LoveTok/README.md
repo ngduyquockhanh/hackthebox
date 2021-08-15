@@ -44,7 +44,7 @@
 - `TimeModel` use `addslashes()` function to escape `$format` which is data of `$_GET('format')` and put it in `eval()` function => it it a vulnerability
 
 ## - Exploit: 
-- `addslashes()` function don't escape characters: `$`, `{`, `}`, ``` ` ``` => can bypass use **Variable parsing** and **Execution Operators**
+- `addslashes()` function don't escape characters: `$`, `{`, `}`, ``` ` ``` => can bypass use [Variable parsing](https://www.php.net/manual/en/language.types.string.php#language.types.string.parsing.simple) and [Execution Operators](https://www.php.net/manual/en/language.operators.execution.php)
 
 ### 1. List files on directory
 - payload:
