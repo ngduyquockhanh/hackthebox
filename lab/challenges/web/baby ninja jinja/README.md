@@ -90,7 +90,7 @@ if __name__ == '__main__':
   - can use `session` to show result of code injection
   - can use `request` to bypass `'` and `"` or use `chr()`
   
-- How to attack:
+### How to attack:
   - injection code
   - check `session` in `cookie` of Http response
   - decode `session` to view result
